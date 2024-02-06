@@ -1,5 +1,7 @@
 // src/LoginForm.tsx
+import { Input } from 'postcss';
 import React from 'react';
+import InputGradientBorder from './InputGradientBorder';
 
 const LoginForm: React.FC = () => {
   return (
@@ -7,13 +9,7 @@ const LoginForm: React.FC = () => {
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">
           <label htmlFor="username" className="block text-gray-700 text-sm font-bold mb-2">Username</label>
-          <input
-            id="username"
-            type="text"
-            placeholder="Username"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            required
-          />
+         <InputGradientBorder/>
         </div>
         <div className="mb-6">
           <label htmlFor="password" className="block text-gray-700 text-sm font-bold mb-2">Password</label>
